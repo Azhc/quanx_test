@@ -9,6 +9,7 @@ if (obj.data && obj.data.length > 0) {
         obj.data[i].is_vip = 1;
         // 修改 free_times 为 999
         obj.data[i].free_times = 999;
+        obj.data[i].flash_left_time=999;
     }
 }
 
