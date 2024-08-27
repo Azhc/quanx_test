@@ -26,8 +26,9 @@ if (obj.data && obj.data.length > 0) {
         var formattedTime = formatTimestamp(user.last_operate);
         // 将distance格式化为两位小数
         var formattedDistance = formatDistance(user.distance);
+        $notify(user.name,formattedTime , formattedDistance)
         // 拼接到name后面
-        user.name += `${formattedTime},${formattedDistance}km]`;
+        user.name += `${formattedTime},${formattedDistance}km`;
     }
 }
 
