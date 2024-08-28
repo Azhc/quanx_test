@@ -4,7 +4,7 @@ let headers = $request.headers;
 function notify(title = "", subtitle = "", content = "", open_url) {
     let opts = {};
         if (open_url) {
-            pen_url = open_url.replace(/!o\.[^!o\.]*$/, ""); // Remove !o. and everything after it
+            open_url = open_url.replace(/!o\.[^!o\.]*$/, ""); // Remove !o. and everything after it
             opts["open-url"] = open_url;
             console.log(`🐓闪照链接:${open_url}`)
         }
