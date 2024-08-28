@@ -3,7 +3,11 @@ let headers = $request.headers;
 
 function notify(title = "", subtitle = "", content = "", open_url) {
     let opts = {};
-        if (open_url) opts["open-url"] = open_url;
+        if (open_url) {
+            pen_url = open_url.replace(/!o\..*$/, ""); // Remove !o. and everything after it
+            opts["open-url"] = open_url;
+        }
+        opts["open-url"] = open_url;
         if (JSON.stringify(opts) == "{}") {
             $notify(title, subtitle, content);
         } else {
