@@ -9,4 +9,4 @@ flash = type=http-response, pattern=^https?:\/\/(argo\.blued\.cn|112\.48\.137\.5
 burn = type=http-response, pattern=^https?:\/\/(burn-chatfiles\.bldimg\.com|112\.48\.137\.53|59\.56\.26\.183|125\.77\.174\.169|220\.249\.135\.81|116\.162\.151\.207|61\.179\.224\.96|122\.188\.185\.240|117\.144\.99\.169|27\.148\.154\.64)\/, script-path=https://raw.githubusercontent.com/Azhc/quanx_test/main/burn.js, requires-body=true, max-size=-1, timeout=60
 
 [MITM]
-hostname = %APPEND% burn-chatfiles.bldimg.com, argo.blued.cn, *.argo.blued.cn, 112.48.137.53, 59.56.26.183, 125.77.174.169, 220.249.135.81, 116.162.151.207, 61.179.224.96, 122.188.185.240, 117.144.99.169, 27.148.154.64
+hostname = %APPEND% burn-chatfiles.bldimg.com, argo.blued.cn, *.argo.blued.cn, 112.48.137.53, 59.56.26.183, 125.77.174.169, 220.249.135.81, 116.162.151.207, 61.179.224.96, 122.188.185.240, 117.144.99.169, 27.148.154.64,220.249.135.81,116.162.151.207
