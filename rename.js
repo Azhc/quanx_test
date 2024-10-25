@@ -1,4 +1,4 @@
-const $ = Env(buladi)
+const $ = Env('buladi')
 
 
 
