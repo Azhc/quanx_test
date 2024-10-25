@@ -1,3 +1,4 @@
+const $ = Env('buladi')
 var url =$request.url;
 let headers = $request.headers;
 
