@@ -11,8 +11,10 @@ function notify(title = "", subtitle = "", content = "", open_url) {
         }
         opts["open-url"] = open_url;
         if (JSON.stringify(opts) == "{}") {
+            console.log('发送链接')
             $.msg(title, subtitle, content);
         } else {
+            console.log('发送链接')
             $.msg(title, subtitle, content, opts);
 
     } 
