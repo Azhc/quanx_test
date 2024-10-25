@@ -12,7 +12,7 @@ function notify(title = "", subtitle = "", content = "", open_url) {
         if (JSON.stringify(opts) == "{}") {
             $.notify(title, subtitle, content);
         } else {
-            $.$notify(title, subtitle, content, opts);
+            $.notify(title, subtitle, content, opts);
 
     } 
 }
