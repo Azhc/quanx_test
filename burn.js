@@ -9,6 +9,7 @@ function notify(title = "", subtitle = "", content = "", open_url) {
             opts["open-url"] = open_url;
             console.log(`🐓闪照链接:${open_url}`)
         }
+    console.log(opts);
         opts["open-url"] = open_url;
         if (JSON.stringify(opts) == "{}") {
             console.log('发送链接')
